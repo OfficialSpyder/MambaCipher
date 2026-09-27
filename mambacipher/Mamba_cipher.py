@@ -1,7 +1,10 @@
 """
 MambaCipher: A Custom Proprietary Encryption & Encoding System.
 Designed for secure tokenization, signature verification, and custom obfuscation.
+Author: Sukhpal Kherera
 """
+
+import sys
 
 # Digit to Special Symbol Mapping
 DIGIT_TO_SYMBOL = {
@@ -21,12 +24,7 @@ DIGIT_TO_SYMBOL = {
 SYMBOL_TO_DIGIT = {v: k for k, v in DIGIT_TO_SYMBOL.items()}
 
 def encrypt(text: str) -> str:
-    """
-    Encodes standard plain text into MambaCipher format.
-    - Digits (0-9) are mapped to special symbols.
-    - Lowercase letters (a-z) are mapped to positional tags like <1>, <2>...
-    - Uppercase letters (A-Z) are mapped to bracket tags like [1], [2]...
-    """
+    """Encodes standard plain text into MambaCipher format."""
     encoded_chars = []
     for char in text:
         if char.isdigit():
@@ -42,9 +40,7 @@ def encrypt(text: str) -> str:
     return "".join(encoded_chars)
 
 def decrypt(encoded_text: str) -> str:
-    """
-    Decodes MambaCipher encoded text back into original plain text.
-    """
+    """Decodes MambaCipher encoded text back into original plain text."""
     decoded_chars = []
     i = 0
     length = len(encoded_text)
@@ -76,11 +72,22 @@ def decrypt(encoded_text: str) -> str:
             
     return "".join(decoded_chars)
 
-# Local Test
+# Interactive CLI & User Input Handler
 if __name__ == "__main__":
-    test_str = "MasterBot-2026-Secure"
-    enc = encrypt(test_str)
-    dec = decrypt(enc)
-    print(f"Original: {test_str}")
-    print(f"Encrypted: {enc}")
-    print(f"Decrypted: {dec}")
+    print("=========================================")
+    print("      MAMBACIPHER SECURITY MODULE        ")
+    print("=========================================")
+    print("1. Encrypt Text")
+    print("2. Decrypt Text")
+    choice = input("Select an option (1 or 2): ").strip()
+    
+    if choice == '1':
+        user_input = input("\nEnter text to encrypt: ")
+        result = encrypt(user_input)
+        print(f"\n[Encrypted Output]:\n{result}")
+    elif choice == '2':
+        user_input = input("\nEnter text to decrypt: ")
+        result = decrypt(user_input)
+        print(f"\n[Decrypted Output]:\n{result}")
+    else:
+        print("\nInvalid choice! Please run the script again.")
