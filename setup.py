@@ -4,7 +4,7 @@ setup(
     name="mambacipher",
     version="1.0.0",
     author="Sukhpal Kherera",
-    author_email="your_email@example.com",
+    author_email="www.sukhkher125@gmail.com",
     description="A custom proprietary encryption and encoding system for secure tokenization.",
     long_description=open("README.md", encoding="utf-8").read(),
     long_description_content_type="text/markdown",
