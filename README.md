@@ -15,9 +15,12 @@ A custom proprietary encryption, encoding, and obfuscation library designed for 
 
 You can install it directly via GitHub:
 ```bash
-pip install git+[https://github.com/YOUR_GITHUB_USERNAME/mamba-cipher.git](https://github.com/YOUR_GITHUB_USERNAME/mamba-cipher.git)
+pip install git+[https://github.com/OfficialSpyder/MambaCipher.git](https://github.com/OffcialSpyder/MambaCipher.git)
 ```
 or directly installed 
 ```
 pip install mambacipher
 ```
+
+or 
+```pip install MambaCipher```
