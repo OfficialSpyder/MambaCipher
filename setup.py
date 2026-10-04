@@ -1,14 +1,14 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="mambacipher",
+    name="MambaCipher",
     version="1.0.0",
     author="Sukhpal Kherera",
     author_email="www.sukhkher125@gmail.com",
     description="A custom proprietary encryption and encoding system for secure tokenization.",
     long_description=open("README.md", encoding="utf-8").read(),
     long_description_content_type="text/markdown",
-    url="https://github.com/YOUR_GITHUB_USERNAME/mamba-cipher",
+    url="https://github.com/OfficialSpyder/MambaCipher",
     packages=find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
