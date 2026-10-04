@@ -1,6 +1,6 @@
 # MambaCipher 🔒
 
-A custom proprietary encryption, encoding, and obfuscation library designed for secure tokenization, configuration hiding, and signature verification. Created by **Sukhpal Kherera**.
+A custom proprietary encryption, encoding, and obfuscation library designed for secure tokenization, configuration hiding, and signature verification. Created by <B>Sukhpal Kherera</B>.
 
 ---
 
@@ -16,3 +16,8 @@ A custom proprietary encryption, encoding, and obfuscation library designed for 
 You can install it directly via GitHub:
 ```bash
 pip install git+[https://github.com/YOUR_GITHUB_USERNAME/mamba-cipher.git](https://github.com/YOUR_GITHUB_USERNAME/mamba-cipher.git)
+```
+or directly installed 
+```
+pip install mambacipher
+```
