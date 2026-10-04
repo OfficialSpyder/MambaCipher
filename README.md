@@ -23,4 +23,6 @@ pip install mambacipher
 ```
 
 or 
-```pip install MambaCipher```
+```
+pip install MambaCipher
+```
